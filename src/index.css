@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6366f1;
+  --color-accent: #10b981;
+  --color-surface: #ffffff;
+  --color-bg: #fafafa;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+}
+
+@layer base {
+  body {
+    @apply bg-bg text-text-main antialiased;
+    font-family: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  }
+}
+
+.soft-card {
+  @apply bg-white border border-slate-100 shadow-sm transition-all duration-300;
+}
+
+.soft-card:hover {
+  @apply shadow-xl shadow-indigo-50/50 -translate-y-1;
+}
+
+.glass-nav {
+  @apply bg-white/70 backdrop-blur-xl border-b border-white/20 sticky top-0 z-50;
+}

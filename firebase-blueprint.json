@@ -1,0 +1,58 @@
+{
+  "collections": {
+    "groups": {
+      "description": "Groups for shared expenses",
+      "fields": {
+        "name": {
+          "type": "string",
+          "description": "Name of the trip or event"
+        },
+        "description": {
+          "type": "string",
+          "description": "Optional description"
+        },
+        "createdAt": {
+          "type": "timestamp",
+          "description": "When the group was created"
+        },
+        "createdBy": {
+          "type": "string",
+          "description": "User ID of the creator"
+        },
+        "members": {
+          "type": "array",
+          "description": "List of user names in the group"
+        }
+      }
+    },
+    "expenses": {
+      "description": "Expenses within a group",
+      "fields": {
+        "groupId": {
+          "type": "string",
+          "description": "ID of the group this expense belongs to"
+        },
+        "description": {
+          "type": "string",
+          "description": "What the expense was for"
+        },
+        "amount": {
+          "type": "number",
+          "description": "Total amount spent"
+        },
+        "payer": {
+          "type": "string",
+          "description": "Name of the person who paid"
+        },
+        "splitBetween": {
+          "type": "array",
+          "description": "List of names to split between"
+        },
+        "date": {
+          "type": "timestamp",
+          "description": "When the expense occurred"
+        }
+      }
+    }
+  }
+}

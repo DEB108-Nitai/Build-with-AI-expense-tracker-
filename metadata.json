@@ -1,0 +1,8 @@
+{
+  "name": "SquadSplit",
+  "description": "A group expense tracker for trips, events, and organizations with elegant GSAP animations and a robust backend.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
